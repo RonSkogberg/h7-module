@@ -8,7 +8,7 @@
 
 Hei! Otin modulini tavoitteeksi luoda kuvitellun yrityksen työntekijöille helpon tavan saada tietoa työpaikan ulkopuolella vellovasta säästä. Yrityksen johto on huomannut, ettei sen työntekijät ulkoile tarpeeksi tauoillaan ja tällä ratkaisulla johto yrittää aktivoita heitä enemmän siihen. Yllä oleva kuva toimii esimakuna siitä, mitä on luvassa.
 
-Modulissa käydään läpi Vagrant-virtuaalikoneiden luonti, Saltin master-/minion arkkitehtuurin luonti sekä käyttämieni ratkaisujen selittäminen sekä testaus. Käytän Windows 10 käyttöjärjestelmää ja Windows PowerShelliä, mutta myös Vagrant SSH-yhteyden kautta kolmea Debian-pohjaista virtuaalikonetta. Modulini on julkaistu GNU General Public License v3 alaisilla oikeuksilla.
+Modulissa käydään läpi Vagrant-virtuaalikoneiden luonti, Saltin master-/minion arkkitehtuurin luonti sekä käyttämieni ratkaisujen selittäminen sekä testaus. Käytän Windows 10 käyttöjärjestelmää ja Windows PowerShelliä, mutta myös Vagrant SSH-yhteyden kautta kolmea Debian-pohjaista virtuaalikonetta. Modulini on julkaistu GNU General Public License v3 alaisilla oikeuksilla ja siinä on sovellettu Tero Karvisen antamaa tehtävänantoa "h7 Oma miniprojekti" hänen Infra as Code -sivultaan (Karvinen 2024). 
 
 Ennen varsinaista infraa koodina, valmistellaan käyttämämme toimintaympäristö.
 
@@ -107,15 +107,11 @@ Kiitos, kun jaksoit lukea raporttini!
 ## References:
 
 Chubin, I. 2024. wttr.in. GitHub. Luettavissa: https://github.com/chubin/wttr.in
-(Chubin 2024)
 
 Karvinen, T. 2023. Salt Vagrant - automatically provision one master and two slaves. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/
-(Karvinen 2023)
 
 Karvinen, T. 2024: Infra as Code 2024. Luettavissa: https://terokarvinen.com/2024/configuration-management-2024-spring
-(Karvinen 2024)
 
 meustrus 2018. Removing colors from output. Stack Overflow. Luettavissa: https://stackoverflow.com/questions/17998978/removing-colors-from-output
-(meustrus 2018)
 
 Skogberg, R. 2024: H2 Soitto kotiin. GitHub. Luettavissa: https://github.com/RonSkogberg/palvelinten_hallinta_2024/blob/main/h2-soitto-kotiin.md
