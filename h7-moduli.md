@@ -32,10 +32,32 @@ Luotuani kolme virtuaalikonetta ja määriteltyäni niiden välille Saltin herra
 
 ## Varsinainen moduli
 
+Alkuperäiset suunnitelmani modulin suhteen olivat aika kunnianhimoiset. Tiesin haluavani hakea säätietoja internetistä ja tuoda ne tavalla tai toisella minion-koneille. 
+
+Päädyin lähestymistapaan, jossa Salt-minion hakee
+
+Pienen googlettelun jälkeen löysin muutamia säätietoja tarjoavia API-palveluita, mutta useimpiin niistä tuli tehdä tunnukset ja joihinkin niistä olisi pitänyt lisätä ilmaisversiossakin luottokorttitiedot (köh, Weatherstack, köh). Hakujen yhteydessä törmäsin Chubin nimimerkillä toimivaan GitHub-käyttäjään ja hänen luomaansa wttr.in -nimiseen komentokehoteelle suunnattuun sääpalveluunsa. Palvelu hakee säätietoja hänen omalta sivustoltaan (https://wttr.in/), josta ne tulostuu curlilla komentokehotteeseen. (Chubin 2024) Se, mistä Chubin itse saa säätietonsa jäi hieman epäselväksi, mutta epäilen hänen saavan ne jostain julksisesta API-palvelusta. Päätin lähteä kokeilemaan Chubinin palvelua, mikä vaati curlin asennuksen sekä master-, että minion-koneille käyttäen komentoa ```$ sudo apt-get install curl```. Eiköhän lähdetä testaamaan!
+
+Testauksen suoritin master-koneella ```$ curl wttr.in/Helsinki``` komennolla, jonka poimin Chubin GitHub-projektin kuvauksesta (Chubin 2024). Tulostus oli vaikuttava, mutta tarvitsin vain tämän päivän säätulosteen. Pienen selvittelyn jälkeen opin wttr.in -palvelun ominaisuuksista sen, että lisäämällä "?1" komennon perään pystyn rajoittamaan tulostuksen laajuutta tämän päivän säähän. Suoritin ```$ curl wttr.in/Helsinki?1``` komennon, jonka lopputulos vastasi odotuksiani. Uskon pystyväni hyödyntävän tätä projektissani!
+
+![5](https://github.com/RonSkogberg/h7-module/assets/148875466/00763570-6e01-49ec-a031-c48ef48d515b)
+
+
+![6](https://github.com/RonSkogberg/h7-module/assets/148875466/31984eba-4f1a-4994-bde8-ea348d04af88)
+
+![7](https://github.com/RonSkogberg/h7-module/assets/148875466/96c7ee87-5a33-404f-aa3c-e9a6277296ea)
+
+![8](https://github.com/RonSkogberg/h7-module/assets/148875466/bc356688-8340-4d0a-90fb-f8976185b9d6)
+
+![9](https://github.com/RonSkogberg/h7-module/assets/148875466/9f5e5e7b-28f7-4f2b-852d-67a5e848e4fd)
+
+![10](https://github.com/RonSkogberg/h7-module/assets/148875466/31f5e026-cdae-44b9-9595-1b673d4bac71)
+
+
 ## References:
 
 Chubin, I. 2024. wttr.in. GitHub. Luettavissa: https://github.com/chubin/wttr.in
-Chubin (2024)
+(Chubin 2024)
 
 meustrus 2018. Removing colors from output. Stack Overflow. Luettavissa: https://stackoverflow.com/questions/17998978/removing-colors-from-output
 (meustrus 2018)
