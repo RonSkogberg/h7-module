@@ -8,9 +8,11 @@
 
 Hei! Otin modulini tavoitteeksi luoda kuvitellun yrityksen työntekijöille helpon tavan saada tietoa työpaikan ulkopuolella vellovasta säästä. Yrityksen johto on huomannut, ettei sen työntekijät ulkoile tarpeeksi tauoillaan ja tällä ratkaisulla johto yrittää aktivoita heitä enemmän siihen. Yllä oleva kuva toimii esimakuna siitä, mitä on luvassa.
 
-Modulissa käydään läpi Vagrant-virtuaalikoneiden luonti, Saltin master-/minion arkkitehtuurin luonti sekä käyttämieni ratkaisujen selittäminen sekä testaus. Käytän Windows 10 käyttöjärjestelmää ja Windows PowerShelliä, mutta myös Vagrant SSH-yhteyden kautta kolmea Debian-pohjaista virtuaalikonetta. Modulini on julkaistu GNU General Public License v3 alaisilla oikeuksilla ja siinä on sovellettu Tero Karvisen antamaa tehtävänantoa "h7 Oma miniprojekti" hänen Infra as Code -sivultaan (Karvinen 2024). 
+Modulissa käydään läpi Vagrant-virtuaalikoneiden luonti, Saltin master-/minion arkkitehtuurin luonti sekä käyttämieni ratkaisujen selittäminen sekä testaus. Käytän Windows 10 käyttöjärjestelmää ja Windows PowerShelliä, mutta myös Vagrant SSH-yhteyden kautta kolmea Debian-pohjaista virtuaalikonetta. 
 
-Ennen varsinaista infraa koodina, valmistellaan käyttämämme toimintaympäristö.
+Modulini on julkaistu GNU General Public License v3 alaisilla oikeuksilla ja siinä on sovellettu Tero Karvisen antamaa tehtävänantoa "h7 Oma miniprojekti" hänen Infra as Code -sivultaan (Karvinen 2024). Käyttämäni Vagrantfilen voit halutessasi ladata h7-modulen repositorysta: https://github.com/RonSkogberg/h7-module.
+
+Ennen varsinaista infraa koodina, valmistellaan käyttämämme toimintaympäristö ensin.
 
 ## Ympäristön valmistelu
 
